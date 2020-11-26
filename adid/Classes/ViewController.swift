@@ -8,8 +8,8 @@ import AdSupport
 
 class ViewController: UIViewController {
 
-  @IBOutlet weak var isAdvertisingTrackingEnabledResultLabel: UILabel!
-  @IBOutlet weak var advertisingIdentifierResultLabel: UILabel!
+  @IBOutlet weak var isAdvertisingTrackingEnabledResultLabel: CopiableLabel!
+  @IBOutlet weak var advertisingIdentifierResultLabel: CopiableLabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
