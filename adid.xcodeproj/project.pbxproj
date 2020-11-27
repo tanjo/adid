@@ -17,6 +17,7 @@
 		4326556F256F9ACA00B525AC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4326556E256F9ACA00B525AC /* AdSupport.framework */; };
 		43FBEEDB256FB8D800D7E806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBEEDA256FB8D800D7E806 /* ViewController.swift */; };
 		43FBEEEB256FB95E00D7E806 /* CopiableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBEEEA256FB95E00D7E806 /* CopiableLabel.swift */; };
+		43FBEEF6256FC05800D7E806 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FBEEF5256FC05800D7E806 /* AppTrackingTransparency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		4326553E256F996200B525AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43265540256F996400B525AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43265543256F996400B525AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		43265545256F996400B525AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4326554A256F996400B525AC /* adidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4326554E256F996400B525AC /* adidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adidTests.swift; sourceTree = "<group>"; };
 		43265550256F996400B525AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +53,10 @@
 		4326556E256F9ACA00B525AC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		43FBEEDA256FB8D800D7E806 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Classes/ViewController.swift; sourceTree = "<group>"; };
 		43FBEEEA256FB95E00D7E806 /* CopiableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CopiableLabel.swift; path = Classes/CopiableLabel.swift; sourceTree = "<group>"; };
+		43FBEEF5256FC05800D7E806 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		43FBEEFD2570AAC300D7E806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		43FBEF072570ADB500D7E806 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		43FBEF082570ADB800D7E806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FBEEF6256FC05800D7E806 /* AppTrackingTransparency.framework in Frameworks */,
 				4326556F256F9ACA00B525AC /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +117,7 @@
 				4326553D256F996200B525AC /* Main.storyboard */,
 				43265540256F996400B525AC /* Assets.xcassets */,
 				43265542256F996400B525AC /* LaunchScreen.storyboard */,
-				43265545256F996400B525AC /* Info.plist */,
+				43FBEEFE2570AAC300D7E806 /* Info.plist */,
 			);
 			path = adid;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 		4326556D256F9ACA00B525AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43FBEEF5256FC05800D7E806 /* AppTrackingTransparency.framework */,
 				4326556E256F9ACA00B525AC /* AdSupport.framework */,
 			);
 			name = Frameworks;
@@ -244,6 +250,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 4326552B256F996200B525AC;
 			productRefGroup = 43265535256F996200B525AC /* Products */;
@@ -342,6 +349,16 @@
 				43265543256F996400B525AC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43FBEEFE2570AAC300D7E806 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43FBEEFD2570AAC300D7E806 /* en */,
+				43FBEF072570ADB500D7E806 /* ja */,
+				43FBEF082570ADB800D7E806 /* Base */,
+			);
+			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,11 +487,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = adid/Info.plist;
+				INFOPLIST_FILE = adid/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = in.tanjo.adid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -489,11 +507,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = adid/Info.plist;
+				INFOPLIST_FILE = adid/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = in.tanjo.adid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
