@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -77,8 +77,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIDevice.identifierForVendor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYT-bw-UoL">
+                                <rect key="frame" x="20" y="468" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBB-jb-vUK" customClass="CopiableLabel" customModule="adid" customModuleProvider="target">
+                                <rect key="frame" x="20" y="513" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxT-2O-Vmz">
-                                <rect key="frame" x="20" y="468" width="374" height="30"/>
+                                <rect key="frame" x="20" y="549.5" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="requestTrackingAuthorization"/>
                                 <connections>
@@ -86,7 +98,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRg-mV-Gwk">
-                                <rect key="frame" x="20" y="514" width="374" height="30"/>
+                                <rect key="frame" x="20" y="595.5" width="374" height="30"/>
                                 <state key="normal" title="Open Settings"/>
                                 <connections>
                                     <action selector="openSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7I-dH-Hz2"/>
@@ -101,9 +113,12 @@
                             <constraint firstItem="PfR-SV-YX5" firstAttribute="top" secondItem="RZh-tK-oOO" secondAttribute="bottom" constant="8" id="1rt-AE-7Rg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xee-Tk-gwM" secondAttribute="trailing" constant="20" id="2TK-6Q-qqo"/>
                             <constraint firstItem="o2K-nT-PFh" firstAttribute="top" secondItem="9xi-RD-JzV" secondAttribute="bottom" constant="8" id="4fa-AR-6Dp"/>
+                            <constraint firstItem="XBB-jb-vUK" firstAttribute="top" secondItem="LYT-bw-UoL" secondAttribute="bottom" constant="16" id="8BM-P9-GVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PfR-SV-YX5" secondAttribute="trailing" constant="20" id="9GQ-3d-5id"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wyI-MH-ze1" secondAttribute="trailing" constant="20" id="AhE-4Z-qwv"/>
+                            <constraint firstItem="XBB-jb-vUK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8o-9A-jsi"/>
                             <constraint firstItem="FRg-mV-Gwk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ec3-p9-SPC"/>
+                            <constraint firstItem="LYT-bw-UoL" firstAttribute="top" secondItem="PfR-SV-YX5" secondAttribute="bottom" constant="16" id="Ffk-Hi-j5p"/>
                             <constraint firstItem="FRg-mV-Gwk" firstAttribute="top" secondItem="nxT-2O-Vmz" secondAttribute="bottom" constant="16" id="FpJ-S1-HLd"/>
                             <constraint firstItem="o2K-nT-PFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IfO-wD-DsV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gTY-hO-tfb" secondAttribute="trailing" constant="20" id="IkS-iM-GfC"/>
@@ -111,22 +126,25 @@
                             <constraint firstItem="xee-Tk-gwM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KhV-Im-BHb"/>
                             <constraint firstItem="RZh-tK-oOO" firstAttribute="top" secondItem="gTY-hO-tfb" secondAttribute="bottom" constant="16" id="Px3-lN-i60"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWT-Qb-9DX" secondAttribute="trailing" constant="20" id="U7O-Gk-AJ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XBB-jb-vUK" secondAttribute="trailing" constant="20" id="VmK-Gz-t7Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o2K-nT-PFh" secondAttribute="trailing" constant="20" id="XQ2-c7-adb"/>
                             <constraint firstItem="gTY-hO-tfb" firstAttribute="top" secondItem="xee-Tk-gwM" secondAttribute="bottom" constant="16" id="ZxN-ZK-1Hq"/>
                             <constraint firstItem="a4e-UT-bhH" firstAttribute="top" secondItem="o2K-nT-PFh" secondAttribute="bottom" constant="16" id="aDi-zb-0Ki"/>
                             <constraint firstItem="wyI-MH-ze1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="ak0-H8-ENk"/>
                             <constraint firstItem="nxT-2O-Vmz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="auV-GD-gFb"/>
+                            <constraint firstItem="LYT-bw-UoL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bCl-gd-ZaO"/>
                             <constraint firstItem="kWT-Qb-9DX" firstAttribute="top" secondItem="a4e-UT-bhH" secondAttribute="bottom" constant="8" id="bgS-KM-ybL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9xi-RD-JzV" secondAttribute="trailing" constant="20" id="cvI-tq-emH"/>
                             <constraint firstItem="gTY-hO-tfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dB4-2Z-Swv"/>
                             <constraint firstItem="a4e-UT-bhH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e1F-8o-sCx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nxT-2O-Vmz" secondAttribute="trailing" constant="20" id="eTO-3i-kfw"/>
+                            <constraint firstItem="nxT-2O-Vmz" firstAttribute="top" secondItem="XBB-jb-vUK" secondAttribute="bottom" constant="16" id="fmt-C8-7LF"/>
                             <constraint firstItem="2kK-MZ-EUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ftq-CE-na1"/>
                             <constraint firstItem="wyI-MH-ze1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iPP-Qh-AAa"/>
                             <constraint firstItem="kWT-Qb-9DX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mJX-Gb-nw4"/>
                             <constraint firstAttribute="trailing" secondItem="RZh-tK-oOO" secondAttribute="trailing" constant="20" id="nb1-Xk-kyD"/>
                             <constraint firstItem="xee-Tk-gwM" firstAttribute="top" secondItem="2kK-MZ-EUj" secondAttribute="bottom" constant="8" id="okM-LX-fVc"/>
-                            <constraint firstItem="nxT-2O-Vmz" firstAttribute="top" secondItem="PfR-SV-YX5" secondAttribute="bottom" constant="16" id="s73-YI-att"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LYT-bw-UoL" secondAttribute="trailing" constant="20" id="qrC-1c-R9p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a4e-UT-bhH" secondAttribute="trailing" constant="20" id="tOc-By-MUH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2kK-MZ-EUj" secondAttribute="trailing" constant="20" id="vnW-Un-ed4"/>
                             <constraint firstItem="RZh-tK-oOO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wGW-0T-zAG"/>
@@ -136,6 +154,7 @@
                     </view>
                     <connections>
                         <outlet property="advertisingIdentifierResultLabel" destination="kWT-Qb-9DX" id="qul-Fn-d5q"/>
+                        <outlet property="identifierForVendorLabel" destination="XBB-jb-vUK" id="4KD-nz-gbL"/>
                         <outlet property="isAdvertisingTrackingEnabledResultLabel" destination="o2K-nT-PFh" id="uBB-dd-P2K"/>
                         <outlet property="requestTrackingAuthorizationButton" destination="nxT-2O-Vmz" id="rsQ-lV-Pt7"/>
                         <outlet property="systemVersionResultLabel" destination="xee-Tk-gwM" id="OUs-7S-0La"/>

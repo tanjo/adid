@@ -14,7 +14,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var systemVersionResultLabel: CopiableLabel!
   @IBOutlet weak var trackingAuthorizationStatusResultLabel: CopiableLabel!
   @IBOutlet weak var requestTrackingAuthorizationButton: UIButton!
-  
+  @IBOutlet weak var identifierForVendorLabel: CopiableLabel!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     if #available(iOS 14, *) {
@@ -75,6 +76,8 @@ class ViewController: UIViewController {
     if #available(iOS 14, *) {
       showTrackingAuthorizationStatusResultLabel(state: ATTrackingManager.trackingAuthorizationStatus)
     }
+
+    identifierForVendorLabel.text = "\(UIDevice.current.identifierForVendor?.uuidString ?? "null")"
   }
 }
 
