@@ -129,7 +129,7 @@
                             <constraint firstItem="XBB-jb-vUK" firstAttribute="top" secondItem="LYT-bw-UoL" secondAttribute="bottom" constant="8" id="8BM-P9-GVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PfR-SV-YX5" secondAttribute="trailing" constant="20" id="9GQ-3d-5id"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wyI-MH-ze1" secondAttribute="trailing" constant="20" id="AhE-4Z-qwv"/>
-                            <constraint firstItem="XBB-jb-vUK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8o-9A-jsi" userLabel="Identifier For Vendor Label.leading = Safe Areas.leading + 20"/>
+                            <constraint firstItem="XBB-jb-vUK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8o-9A-jsi"/>
                             <constraint firstItem="FRg-mV-Gwk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ec3-p9-SPC"/>
                             <constraint firstItem="LYT-bw-UoL" firstAttribute="top" secondItem="PfR-SV-YX5" secondAttribute="bottom" constant="8" id="Ffk-Hi-j5p"/>
                             <constraint firstItem="FRg-mV-Gwk" firstAttribute="top" secondItem="nxT-2O-Vmz" secondAttribute="bottom" constant="8" id="FpJ-S1-HLd"/>
