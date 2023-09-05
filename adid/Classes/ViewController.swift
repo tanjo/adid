@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var trackingAuthorizationStatusResultLabel: CopiableLabel!
   @IBOutlet weak var requestTrackingAuthorizationButton: UIButton!
   @IBOutlet weak var identifierForVendorLabel: CopiableLabel!
+  @IBOutlet weak var bundleIdentifierLabel: CopiableLabel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -59,6 +60,7 @@ class ViewController: UIViewController {
           self.trackingAuthorizationStatusResultLabel.text = "denied"
         case .authorized:
           self.trackingAuthorizationStatusResultLabel.text = "authorized"
+          self.refresh()
         @unknown default:
           self.trackingAuthorizationStatusResultLabel.text = "unknown"
       }
@@ -78,6 +80,8 @@ class ViewController: UIViewController {
     }
 
     identifierForVendorLabel.text = "\(UIDevice.current.identifierForVendor?.uuidString ?? "null")"
+      
+    bundleIdentifierLabel.text = "\(Bundle.main.bundleIdentifier ?? "null")"
   }
 }
 
